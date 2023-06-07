@@ -16,5 +16,6 @@ def second_largest(arr):
 
 
 print(second_largest([2, 1, 2]))
-print(second_largest([11,15,19]))
+print(second_largest([2]))
+print(second_largest([11, 15, 19]))
 print(second_largest([13, 7, 16, 18, 14, 17, 18, 8, 10]))
