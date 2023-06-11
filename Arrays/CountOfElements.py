@@ -5,12 +5,12 @@
 
 
 def count_elements(arr):
-    count, cur_max = 0, arr[0]
-    for num in arr:
-        if num > cur_max:
-            cur_max = num
+    count, cur_max = 1, arr[0]
+    for i in range(1, len(arr)):
+        if arr[i] > cur_max:
+            cur_max = arr[i]
             count = 1
-        if num == cur_max:
+        elif arr[i] == cur_max:
             count += 1
     return len(arr) - count
 
