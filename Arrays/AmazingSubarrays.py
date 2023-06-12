@@ -20,7 +20,7 @@ def amazing_sub_arrays(string):
     mod, count, n = 10003, 0, len(string)
     for i in range(n):
         if my_map.get(string[i]) is not None:
-            count = count + ((n - i) % mod)
+            count += (n - i)
 
     return count
 
